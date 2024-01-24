@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">ArkanDev</div>
+      <div id="toggle" style="font-size: 40px">=</div>
+      <ul id="menu" class="hidden">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Help</li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      <div class="content">
+        <div class="img-mobile">
+          <img src="img/laptop.png" alt="" width="300" />
+        </div>
+        <div class="title">Frontend Developer</div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          dolorem debitis voluptates adipisci cumque sint nisi cum ratione enim
+          dolor?
+        </p>
+        <div class="button">
+          <button>Join</button>
+          <button class="contact">Contact</button>
+        </div>
+      </div>
+      <div class="img">
+        <img src="img/laptop.png" alt="" />
+      </div>
+    </div>
+    <script>
+      const Toggle = document.getElementById("toggle");
+      const Nav = document.getElementById("menu");
+
+      Toggle.addEventListener("click", () => {
+        Nav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
