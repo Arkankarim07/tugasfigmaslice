@@ -4,47 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slice2.css" />
   </head>
   <body>
     <div class="navbar">
-      <div class="logo">ArkanDev</div>
-      <div id="toggle" style="font-size: 40px">=</div>
-      <ul id="menu" class="hidden">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Help</li>
+      <div class="navbar-mobile">
+        <div class="logo">Arkan<span>Dev</span></div>
+        <div id="toggle">=</div>
+      </div>
+      <ul id="menu" class="hidden-mobile">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </div>
 
-    <div class="hero">
-      <div class="content">
-        <div class="img-mobile">
-          <img src="img/laptop.png" alt="" width="300" />
+
+    <section>
+      <div class="container-desk">
+        <div class="hero">
+          <p class="name">Hello Im Arkan</p>
+          <h1>Im <span>Frontend</span> Developer</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt
+            doloribus totam reiciendis, alias saepe dolore suscipit iure et
+            quibusdam.
+          </p>
+          <div class="button">
+            <button>Contact</button>
+          </div>
         </div>
-        <div class="title">Frontend Developer</div>
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-          dolorem debitis voluptates adipisci cumque sint nisi cum ratione enim
-          dolor?
-        </p>
-        <div class="button">
-          <button>Join</button>
-          <button class="contact">Contact</button>
+        <img src="../img/laptop.png" />
+      </div>
+      <div class="container-mobile">
+        <div class="hero">
+          <p class="name">Hello Im Arkan</p>
+          <h1>Im <span>Frontend</span> Developer</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt
+            doloribus totam reiciendis, alias saepe dolore suscipit iure et
+            quibusdam.
+          </p>
+          <div class="button">
+            <button>Contact</button>
+          </div>
+        </div>
+        <img src="../img/laptop.png" />
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-about">
+        <h1 class="about-title">About Me</h1>
+
+        <div class="base-hero-about">
+          <div class="hero-about">
+            <div class="title-hero-about">Pendikan</div>
+          <p>SDN Pulogebang 05 <br>
+            SMPN 172 <br>
+            SMKN 40</p>
+        </div>
+
+        <div class="hero-about">
+          <div class="title-hero-about">Tempat Tinggal</div>
+          <p>Bumi, Indonesia</p>
+        </div>
+        <div class="hero-about">
+          <div class="title-hero-about">Pengalaman</div>
+          <p>Tidak ada</p>
         </div>
       </div>
-      <div class="img">
-        <img src="img/laptop.png" alt="" />
+
       </div>
-    </div>
+    </section>
+
+
     <script>
       const Toggle = document.getElementById("toggle");
-      const Nav = document.getElementById("menu");
+      const Navbar = document.getElementById("menu");
 
       Toggle.addEventListener("click", () => {
-        Nav.classList.toggle("hidden");
-      });
+        Navbar.classList.toggle("slide");
+      })
     </script>
   </body>
 </html>
