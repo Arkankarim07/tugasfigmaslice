@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-mobile">
+        <div class="logo">Arkan<span>Dev</span></div>
+        <div id="toggle">=</div>
+      </div>
+      <ul id="menu" class="hidden-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="form-container">
+        <form action="">
+          <div class="form-input">
+            <h1>Login</h1>
+            <span>Username</span>
+            <input type="text" name="username" id="username" />
+
+            <span>Email</span>
+            <input type="email" name="email" id="email" />
+
+            <span>Password</span>
+            <input type="password" name="password" id="password" />
+            <button>Submit</button>
+          </div>
+
+          <div class="img-form">
+            <img src="login.jpg" width="300px" alt="" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const Toggle = document.getElementById("toggle");
+      const Navbar = document.getElementById("menu");
+
+      Toggle.addEventListener("click", () => {
+        Navbar.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
