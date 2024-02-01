@@ -131,6 +131,7 @@ button:hover {
 .about-title {
   font-size: 30px;
   color: #fff;
+  position: relative;
 }
 
 .about-title:hover {
@@ -141,9 +142,12 @@ button:hover {
 .about-title::after {
   position: absolute;
   content: "";
+
   width: 25%;
-  left: 0;
   bottom: 0;
+  left: 0;
+  transform: translateX(150%);
+  height: 3px;
   background-color: red;
   color: red;
 }
@@ -250,5 +254,17 @@ button:hover {
     display: flex;
     padding: 4rem 0 4rem 0;
     justify-content: center;
+  }
+  .about-title::after {
+    position: absolute;
+    content: "";
+
+    transform: translateX(0%);
+    width: 70%;
+    bottom: 0;
+    left: 40px;
+    height: 3px;
+    background-color: red;
+    color: red;
   }
 }
