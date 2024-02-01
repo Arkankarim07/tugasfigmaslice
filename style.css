@@ -43,6 +43,11 @@ body {
   text-decoration: none;
 }
 
+.navbar ul li a:hover {
+  color: red;
+  font-size: 20px;
+  transition: 0.2s;
+}
 .container-desk {
   width: 100%;
   display: flex;
