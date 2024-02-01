@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-mobile">
+        <div class="logo">Arkan<span>Dev</span></div>
+        <div id="toggle">=</div>
+      </div>
+      <ul id="menu" class="hidden-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="form.html">Login</a></li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="product-container">
+        <table>
+          <thead>
+            <th scope="col">Product</th>
+            <th scope="col">Specification</th>
+            <th scope="col" class="harga">Price</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="product-image">
+                  <img src="assets/acernitro5.webp" alt="" />
+                  <h1>Acer Nitro 5</h1>
+                </div>
+              </td>
+              <td>
+                <ul class="product-spec">
+                  <li>Processor : Intel® Core™ i5-12500H</li>
+                  <li>OS : Windows 11 Home</li>
+                  <li>Memory : 1*8GB DDR4</li>
+                  <li>Storage : 512GB SSD NVMe</li>
+                  <li>Graphic : NVIDIA® GeForce RTX™ 3050 Laptop</li>
+                </ul>
+              </td>
+              <td class="price-mobile">Rp 14.000.000</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="product-image">
+                  <img src="assets/rogstrix.webp" alt="" />
+                  <h1>ROG Strix G16</h1>
+                </div>
+              </td>
+              <td>
+                <ul class="product-spec">
+                  <li>Processor : Intel® Core™ i9-13980HX</li>
+                  <li>OS : Windows 11 Home</li>
+                  <li>Memory : 1*16GB DDR5</li>
+                  <li>Storage : 2TB SSD NVMe</li>
+                  <li>Graphic : NVIDIA® GeForce RTX™ 4080 Laptop</li>
+                </ul>
+              </td>
+              <td class="price-mobile">Rp 16.499.000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-image">
+                  <img src="assets/tuf-f15.webp" alt="" />
+                  <h1>ASUS TUF F15</h1>
+                </div>
+              </td>
+              <td class="product-spec-td">
+                <ul class="product-spec">
+                  <li>Processor : AMD Ryzen™ 7 12700H</li>
+                  <li>OS : Windows 11 Home</li>
+                  <li>Memory : 1*8GB DDR4</li>
+                  <li>Storage : 512GB SSD NVMe</li>
+                  <li>Graphic : NVIDIA® GeForce RTX™ 3070 Laptop</li>
+                </ul>
+              </td>
+              <td class="price-mobile">Rp 16.499.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      const Toggle = document.getElementById("toggle");
+      const Navbar = document.getElementById("menu");
+
+      Toggle.addEventListener("click", () => {
+        Navbar.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
