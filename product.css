@@ -113,6 +113,25 @@ tr {
   display: flex;
   flex-direction: column;
 }
+
+.price-mobile {
+  font-weight: bold;
+}
+
+.dropdown-price {
+  display: none;
+}
+
+.price-mobile:hover .dropdown-price {
+  display: block;
+  position: absolute;
+  right: 50px;
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   section {
     margin-top: 70px;
